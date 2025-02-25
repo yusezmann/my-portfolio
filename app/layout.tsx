@@ -33,7 +33,7 @@ export default function RootLayout({
         className={`bg-[#FFFFF0] dark:bg-[#1c1c22] ${jetbrainsMono.variable}`}
       >
         <Providers>
-          <ParticlesContainer />
+          {/* <ParticlesContainer /> */}
           {/* <TopLeftImg /> */}
           <Header />
           <StairTransition />

@@ -24,10 +24,12 @@ const Header = () => {
         {/*  desktop nav hire me  button */}
         <div className="xl:flex items-center gap-8">
           <Nav />
-          <Socials
-            containerStyle="flex flex-row gap-6 justify-center items-center"
-            iconStyle="w-9 h-9 border border-accent bg-transparent dark:border-accent rounded-full flex justify-center items-center text-primary/80 dark:text-accent text-base hover:bg-accent dark:hover:text-primary hover:transition-all duration-500"
-          />
+          <div className="hidden xl:block">
+            <Socials
+              containerStyle="flex flex-row gap-4 justify-start items-center xl:justify-start xl:items-center"
+              iconStyle="w-9 h-9 border border-accent bg-transparent dark:border-accent rounded-full flex justify-center items-center text-primary/80 dark:text-accent text-base transition-all duration-500 hover:bg-accent hover:text-white dark:hover:text-primary"
+            />
+          </div>
           <Link href="/contact" className="hidden xl:block">
             <Button className="hover:text-white">Hire me</Button>
           </Link>
