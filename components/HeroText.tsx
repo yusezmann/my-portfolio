@@ -15,7 +15,7 @@ const HeroText = () => {
         transition: { delay: 0.8, duration: 0.5, ease: "easeOut" },
       }}
     >
-      <h1 className="h1 mb-6 text-primary/80 dark:text-white/80">
+      <h1 className="h2 xl:h1 mb-6 text-primary/80 dark:text-white/80">
         Hello, I&apos;m <br /> <span className="text-accent">Usman</span>
       </h1>
       <p className="max-w-full md:max-w-[500px] mb-5 text-primary/80 dark:text-white/80 px-4 md:px-0">
@@ -24,7 +24,7 @@ const HeroText = () => {
       </p>
 
       {/* Button */}
-      <div className="flex flex-col xl:flex-row gap-4 md:gap-8 mb-14 xl:mb-0">
+      <div className="flex flex-col xl:flex-row gap-4 md:gap-8 mb-2 xl:mb-0">
         <Button
           variant="outline"
           size="lg"
