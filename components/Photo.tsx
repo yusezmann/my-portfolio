@@ -14,7 +14,7 @@ const Photo = () => {
           scale: 1,
           transition: { delay: 0.8, duration: 0.5, ease: "easeOut" },
         }}
-        className="relative w-[180px] sm:w-[240px] md:w-[300px] lg:w-[350px] xl:w-[400px] top-2 left-1"
+        className="relative w-[180px] sm:w-[240px] md:w-[300px] lg:w-[350px] xl:w-[400px] top-1 left-1"
       >
         <Image
           src="/assets/profile1.png"

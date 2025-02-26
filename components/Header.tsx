@@ -7,6 +7,7 @@ import Nav from "./Nav"
 import Socials from "./Socials"
 import Image from "next/image"
 import ThemeToggler from "./ThemeToggler"
+import { MdSunny } from "react-icons/md"
 
 const Header = () => {
   return (
@@ -24,7 +25,7 @@ const Header = () => {
         {/*  desktop nav hire me  button */}
         <div className="xl:flex items-center gap-8">
           <Nav />
-          <div className="hidden xl:block">
+          <div className="">
             <Socials
               containerStyle="flex flex-row gap-4 justify-start items-center xl:justify-start xl:items-center"
               iconStyle="w-9 h-9 border border-accent bg-transparent dark:border-accent rounded-full flex justify-center items-center text-primary/80 dark:text-accent text-base transition-all duration-500 hover:bg-accent hover:text-white dark:hover:text-primary"
@@ -34,7 +35,9 @@ const Header = () => {
             <Button className="hover:text-white">Hire me</Button>
           </Link>
         </div>
-        <ThemeToggler />
+        <div className="">
+          <ThemeToggler />
+        </div>
       </div>
     </header>
   )

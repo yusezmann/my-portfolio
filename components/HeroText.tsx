@@ -40,16 +40,6 @@ const HeroText = () => {
           </Link>
         </Button>
       </div>
-      {/* <div className="flex flex-col xl:flex-row gap-4 md:gap-8 mb-14 xl:mb-0">
-        <a
-          href="/assets/document/Usman.pdf" // Path yang benar
-          download="CV_Usman.pdf" // Nama file saat diunduh
-          className="uppercase flex items-center gap-2 hover:bg-accent hover:text-white transition-all duration-300 w-full md:w-auto border border-gray-300 px-4 py-2 rounded-md text-gray-800"
-        >
-          <span>Download CV</span>
-          <FiDownload className="ml-2 text-xl" />
-        </a>
-      </div> */}
     </motion.div>
   )
 }

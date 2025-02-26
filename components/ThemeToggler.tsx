@@ -39,27 +39,48 @@ const ThemeToggler = () => {
   }, [])
 
   return (
-    <div className="flex items-center gap-2 p-2">
-      <div
-        className={`text-yellow-300 font-bold cursor-pointer p-2 ${
-          isDarkMode ? "opacity-50" : "opacity-100"
-        }`}
-        onClick={() => isDarkMode && toggleTheme()}
-      >
-        <MdSunny className="text-2xl" />
+    <>
+      <div className="hidden xl:block">
+        <div className="flex items-center gap-2 p-2">
+          <div
+            className={` text-yellow-300 font-bold cursor-pointer p-2 ${
+              isDarkMode ? "opacity-50" : "opacity-100"
+            }`}
+            onClick={() => isDarkMode && toggleTheme()}
+          >
+            <MdSunny className="text-2xl" />
+          </div>
+          <div>
+            <Switch checked={isDarkMode} onCheckedChange={toggleTheme} />
+          </div>
+          <div
+            className={`dark:text-white text-black font-bold cursor-pointer p-2 ${
+              isDarkMode ? "opacity-100" : "opacity-50"
+            }`}
+            onClick={() => !isDarkMode && toggleTheme()}
+          >
+            <FaRegMoon />
+          </div>
+        </div>
       </div>
-      <div>
-        <Switch checked={isDarkMode} onCheckedChange={toggleTheme} />
+      <div className="block xl:hidden">
+        {isDarkMode ? (
+          <div
+            className={`dark:text-white text-black font-bold cursor-pointer p-2 opacity-100 `}
+            onClick={() => toggleTheme()}
+          >
+            <FaRegMoon />
+          </div>
+        ) : (
+          <div
+            className={` text-yellow-300 font-bold cursor-pointer p-2 opacity-100 `}
+            onClick={() => toggleTheme()}
+          >
+            <MdSunny className="text-2xl" />
+          </div>
+        )}
       </div>
-      <div
-        className={`dark:text-white text-black font-bold cursor-pointer p-2 ${
-          isDarkMode ? "opacity-100" : "opacity-50"
-        }`}
-        onClick={() => !isDarkMode && toggleTheme()}
-      >
-        <FaRegMoon />
-      </div>
-    </div>
+    </>
   )
 }
 
