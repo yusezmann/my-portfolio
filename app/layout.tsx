@@ -29,9 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`bg-[#FFFFF0] dark:bg-[#1c1c22] ${jetbrainsMono.variable}`}
-      >
+      <body className={`relative min-h-screen ${jetbrainsMono.variable}`}>
         <Providers>
           {/* <ParticlesContainer /> */}
           {/* <TopLeftImg /> */}
