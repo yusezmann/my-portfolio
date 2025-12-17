@@ -41,6 +41,36 @@ const projects = [
   {
     num: "03",
     category: "Fullstack Developer",
+    title: "Finance Management",
+    description: "FinPlan is a web application to manage personal finances",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind" },
+      { name: "PostgreSQL" },
+      { name: "Supabase" },
+    ],
+    image: "/assets/work/finplan.png",
+    live: "https://finplan-apps.vercel.app",
+    github: "https://github.com/yusezmann/finplan-apps",
+  },
+  {
+    num: "04",
+    category: "Fullstack Developer",
+    title: "Note Blog",
+    description: "Note Blog is a web CMS to manage personal blogs and notes",
+    stack: [
+      { name: "Next.js" },
+      { name: "Tailwind" },
+      { name: "PostgreSQL" },
+      { name: "Supabase" },
+    ],
+    image: "/assets/work/NoteBlog.png",
+    live: "https://note-blog-dun.vercel.app/",
+    github: "https://github.com/yusezmann/note-haven-blog",
+  },
+  {
+    num: "05",
+    category: "Fullstack Developer",
     title: "Hotel book application",
     description: "Web application for hotel booking",
     stack: [
@@ -54,7 +84,7 @@ const projects = [
     github: "",
   },
   {
-    num: "04",
+    num: "06",
     category: "Fullstack Developer",
     title: "Inventory Management",
     description: "Inventory management system for a startup company",
