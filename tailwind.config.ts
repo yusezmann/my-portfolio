@@ -29,6 +29,10 @@ const config: Config = {
           hover: "#00e187",
         },
       },
+      backgroundColor: {
+        light: "#ffffff",
+        dark: "#1c1c22",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
