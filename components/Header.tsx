@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         {/*  desktop nav hire me  button */}
-        <div className="xl:flex items-center gap-8">
+        <div className="xl:flex items-center gap-8 relative z-0">
           <Nav />
           <div className="">
             <Socials

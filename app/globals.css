@@ -40,7 +40,7 @@
     animation: gradient-shift-dark 20s ease infinite;
   }
   
-  body > * {
+  body > *:not(nav):not([class*="fixed"]) {
     position: relative;
     z-index: 1;
   }
