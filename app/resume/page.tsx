@@ -189,16 +189,16 @@ const Resume = () => {
                     {experience.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="bg-white dark:bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 border border-primary/10 dark:border-white/10 shadow-sm"
                       >
                         <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl text-center lg:text-left">
+                        <h3 className="text-xl text-center lg:text-left text-primary dark:text-white">
                           {item.position}
                         </h3>
                         <div className="flex items-center gap-3">
                           {/* dot */}
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.company}</p>
+                          <p className="text-primary/60 dark:text-white/60">{item.company}</p>
                         </div>
                       </li>
                     ))}
@@ -221,16 +221,16 @@ const Resume = () => {
                     {education.items.map((item, index) => (
                       <li
                         key={index}
-                        className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                        className="bg-white dark:bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 border border-primary/10 dark:border-white/10 shadow-sm"
                       >
                         <span className="text-accent">{item.duration}</span>
-                        <h3 className="text-xl text-center lg:text-left">
+                        <h3 className="text-xl text-center lg:text-left text-primary dark:text-white">
                           {item.degree}
                         </h3>
                         <div className="flex items-center gap-3">
                           {/* dot */}
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{item.institution}</p>
+                          <p className="text-primary/60 dark:text-white/60">{item.institution}</p>
                         </div>
                       </li>
                     ))}
@@ -255,12 +255,12 @@ const Resume = () => {
                     <li key={index} className="">
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
-                          <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                          <TooltipTrigger className="w-full h-[150px] bg-white dark:bg-[#232329] rounded-xl flex justify-center items-center group border border-primary/10 dark:border-white/10 shadow-sm">
+                            <div className="text-6xl text-primary/80 dark:text-white/80 group-hover:text-accent transition-all duration-300">
                               {skill.icon}
                             </div>
                           </TooltipTrigger>
-                          <TooltipContent className="bg-[#232329] dark:bg-white">
+                          <TooltipContent className="bg-primary dark:bg-white">
                             <p className="text-white dark:text-primary">
                               {skill.name}
                             </p>
